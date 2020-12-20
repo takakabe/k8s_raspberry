@@ -1,0 +1,14 @@
+all:
+  hosts:
+    k8s-master:
+    k8s-worker-01:
+    k8s-worker-02:
+  children:
+    master:
+      hosts:
+        k8s-master:
+    worker:
+      hosts:
+        k8s-worker-01:
+        k8s-worker-02:
+
